@@ -34,20 +34,21 @@ class customEarlyStopping(EarlyStopping):
 
     def on_epoch_end(self, epoch, logs=None):
         global ourLogs
-        super().on_epoch_end(epoch, ourLogs)
+        if ourLogs.items():
+            super().on_epoch_end(epoch, ourLogs)
+        else:
+            super().on_epoch_end(epoch, logs)
 
 class customModelCheckpoint(ModelCheckpoint):
     def __init__(self, filepath, monitor='val_auc', save_best_only=True, mode='max'):
         super(customModelCheckpoint, self).__init__(filepath=filepath, monitor=monitor, save_best_only=save_best_only, mode=mode)
-        '''
-        self.monitor=monitor
-        self.save_best_only=save_best_only
-        self.mode=mode
-        '''
 
     def on_epoch_end(self, epoch, logs=None):
         global ourLogs
-        super().on_epoch_end(epoch, ourLogs)
+        if ourLogs.items():
+            super().on_epoch_end(epoch, ourLogs)
+        else:
+            super().on_epoch_end(epoch, logs)
 
 def exceptNone(labels, preds, idx):
     answer = []
@@ -60,6 +61,13 @@ def exceptNone(labels, preds, idx):
             predict.append(p)
     return answer, predict
 
+def custom_run_batch(data, size, func):
+    result = []
+    for i in range(len(data[0])//size):
+        result.append(func([data[j][i*size:i*size+size] for j in range(len(data))])[0])
+    result.append(func([data[j][i*size+size:len(data[0])] for j in range(len(data))])[0])
+    return np.concatenate(result)
+
 class customCallback(Callback):
     def __init__(self, valid):
         super(customCallback, self).__init__()
@@ -67,20 +75,14 @@ class customCallback(Callback):
         self.validLabel = valid[1]
 
     def on_epoch_end(self, epoch, logs=None):
-
-        def custom_run_batch(data, size, func):
-            result = []
-            for i in range(len(data[0])//size):
-                result.append(func([data[j][i*size:i*size+size] for j in range(len(data))])[0])
-            result.append(func([data[j][i*size+size:len(data[0])] for j in range(len(data))])[0])
-            return np.concatenate(result)
-
         get_layer_output = K.function([self.model.input], [self.model.output])
         pred = custom_run_batch(self.validFeature, 32, get_layer_output) 
 
-        #pred = self.model.predict(self.validFeature, 32, verbose=2) 
         pred = np.array(pred)
 
+        ###############
+        log_list = []
+        ###############
         mean = 0 
         for idx in range(self.validLabel.shape[1]):
             answer, predict = exceptNone(self.validLabel, pred, idx)
@@ -89,6 +91,9 @@ class customCallback(Callback):
             except ValueError:
                 score = 0.0
             mean += score
+            ###############
+            log_list.append(score)
+            ###############
         mean /= self.validLabel.shape[1] 
 
         clear_session()
@@ -97,4 +102,10 @@ class customCallback(Callback):
         global ourLogs
         ourLogs = logs
         ourLogs['val_auc'] = mean 
-        totalLogs.append(mean)
+        ###############
+        #totalLogs.append(mean)
+        ###############
+        ###############
+        log_list.append(mean)
+        totalLogs.append(log_list)
+        ###############

@@ -21,8 +21,9 @@ create_dir(split_dir)
 pp_dir = os.path.join(data_dir, 'preprocessing_data')
 create_dir(pp_dir)
 
-atom_cutoff = 60
+atom_cutoff = 50
 atom_length = 127
+bond_cutoff = 3 
 bond_length = 12
 
 result_dir = os.path.join(par_dir, 'result')
@@ -31,11 +32,12 @@ create_dir(result_dir)
 log_dir = os.path.join(par_dir, 'logs')
 create_dir(log_dir)
 
-dense_size = 256
+dense_size = 128
 task_dense_size = 128
+
 dropout = 0.3
 learning_rate = 1e-3
 
-epochs = 1000 
+epochs = 1000
 batch_size = 256
-patience = 200
+patience = 100

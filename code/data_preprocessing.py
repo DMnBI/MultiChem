@@ -59,24 +59,34 @@ def atom_feature_list(mol):
 
 def bond_feature_list(mol):
     bonds = mol.GetBonds() 
+    count = np.zeros(cf.atom_cutoff)
     features = np.zeros((cf.atom_cutoff, cf.atom_cutoff, 2*cf.bond_length))
     for f, (i,j) in zip(list(map(bond_feature, bonds)), list(map(bond_index, bonds))):
         if i >= cf.atom_cutoff or j >= cf.atom_cutoff:
             continue
         else:
-            features[i][j] = np.pad(f, (0,cf.bond_length), 'constant', constant_values=0)
-            features[j][i] = np.pad(f, (cf.bond_length,0), 'constant', constant_values=0)
+            if count[i] < cf.bond_cutoff:
+                features[i][j] = np.pad(f, (0,cf.bond_length), 'constant', constant_values=0)
+                count[i] += 1
+            if count[j] < cf.bond_cutoff:
+                features[j][i] = np.pad(f, (cf.bond_length,0), 'constant', constant_values=0)
+                count[j] += 1
     return features
 
 def graph_feature_list(mol):
     bonds = mol.GetBonds() 
+    count = np.zeros(cf.atom_cutoff)
     graph = np.zeros((cf.atom_cutoff, cf.atom_cutoff))
     for (i,j) in list(map(bond_index, bonds)):
         if i >= cf.atom_cutoff or j >= cf.atom_cutoff:
             continue
         else:
-            graph[i][j] = 1
-            graph[j][i] = 1
+            if count[i] < cf.bond_cutoff:
+                graph[i][j] = 1
+                count[i] += 1
+            if count[j] < cf.bond_cutoff:
+                graph[j][i] = 1
+                count[j] += 1
     return graph
 
 def get_clear_labels(labels):
@@ -107,7 +117,9 @@ def preprocessing_data(name, tasks=None):
     preprocessing(name, 'test', tasks)
 
 if __name__ == '__main__':
-    #preprocessing_data('tox21', ['NR-AR', 'NR-AR-LBD', 'NR-AhR', 'NR-Aromatase', 'NR-ER', 'NR-ER-LBD','NR-PPAR-gamma', 'SR-ARE', 'SR-ATAD5', 'SR-HSE', 'SR-MMP', 'SR-p53'])
+    preprocessing_data('tox21', ['NR-AR', 'NR-AR-LBD', 'NR-AhR', 'NR-Aromatase', 'NR-ER', 'NR-ER-LBD','NR-PPAR-gamma', 'SR-ARE', 'SR-ATAD5', 'SR-HSE', 'SR-MMP', 'SR-p53'])
     #preprocessing_data('toxcast')
     #preprocessing_data('sider')
-    preprocessing_data('hiv')
+    #preprocessing_data('hiv')
+    #preprocessing_data('bbbp')
+    #preprocessing_data('clintox')
