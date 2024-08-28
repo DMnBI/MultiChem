@@ -16,7 +16,7 @@ if __name__ == '__main__':
 			  --train_file /home/project/code_2024/MultiChem/example_data/mpg_data/{0}/fold_{1}/train.csv \
 			  --val_file /home/project/code_2024/MultiChem/example_data/mpg_data/{0}/fold_{1}/valid.csv \
 			  --test_file /home/project/code_2024/MultiChem/example_data/mpg_data/{0}/fold_{1}/test.csv \
-			  --log_dir /home/project/code_2024/MultiChem/default_log/{0}/fold_{1} \
+			  --log_dir /home/project/code_2024/MultiChem/Log/{0}/fold_{1} \
 			  --batch_size {2} --label_size {3} \
 			  --predict'
 
