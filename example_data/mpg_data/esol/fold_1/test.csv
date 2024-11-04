@@ -1,0 +1,113 @@
+Compound ID,ESOL predicted log solubility in mols per litre,Minimum Degree,Molecular Weight,Number of H-Bond Donors,Number of Rings,Number of Rotatable Bonds,Polar Surface Area,measured log solubility in mols per litre,smiles
+Decalin,-3.715,2,138.254,0,2,0,0.0,-5.19,C1CCC2CCCCC2C1
+norbormide,-4.238,1,511.58100000000013,2,7,5,92.18,-3.931,OC(C1=CC2C5C(C1C2=C(c3ccccc3)c4ccccn4)C(=O)NC5=O)(c6ccccc6)c7ccccn7 
+Tricyclazole,-2.8680000000000003,1,189.243,0,3,0,30.19,-2.07,Cc2cccc3sc1nncn1c23 
+Isazofos,-3.76,1,313.747,0,1,7,58.4,-3.658,CCOP(=S)(OCC)Oc1nc(Cl)n(n1)C(C)C
+Amitrole,-0.674,1,84.08200000000001,2,1,0,67.59,0.522,Nc1nc[nH]n1
+chlorothiazide,-1.7519999999999998,1,295.7290000000001,2,2,1,118.69,-3.05,NS(=O)(=O)c2cc1c(N=CNS1(=O)=O)cc2Cl 
+Pyrazinamide,-0.674,1,123.11499999999998,1,1,1,68.87,-0.667,NC(=O)c1cnccn1
+Dienestrol,-4.775,1,266.34,2,2,3,40.46,-4.95,CC=C(C(=CC)c1ccc(O)cc1)c2ccc(O)cc2
+Prasterone,-3.564,1,288.4310000000001,1,4,0,37.3,-4.12,CC34CCC1C(CC=C2CC(O)CCC12C)C3CCC4=O
+Bibenzyl ,-4.301,2,182.266,0,2,3,0.0,-4.62,C(Cc1ccccc1)c2ccccc2
+Hexestrol,-4.854,1,270.372,2,2,5,40.46,-4.43,CCC(C(CC)c1ccc(O)cc1)c2ccc(O)cc2
+hydrobenzoin,-2.645,1,214.264,2,2,3,40.46,-1.93,c1ccccc1C(O)C(O)c2ccccc2
+RTI 3,-3.049,1,255.27700000000002,1,3,0,68.45,-3.043,O2c1cc(C)ccc1N(C)C(=O)c3cc(N)cnc23 
+RTI 10,-2.7710000000000004,1,226.235,0,3,0,42.43,-3.672,O2c1ccccc1N(C)C(=O)c3cccnc23 
+Ethirimol,-2.732,1,209.293,2,1,5,57.78,-3.028,CCCCc1c(C)nc(NCC)[nH]c1=O
+thiouracil,-0.992,1,128.15599999999998,2,1,0,45.75,-2.273,Sc1nccc(=O)[nH]1 
+Bendroflumethiazide,-3.741,1,421.42200000000014,3,3,3,118.36,-3.59,NS(=O)(=O)c3cc2c(NC(Cc1ccccc1)NS2(=O)=O)cc3C(F)(F)F
+2-Methylphenanthrene,-4.87,1,192.261,0,3,0,0.0,-5.84,Cc1ccc2c(ccc3ccccc32)c1
+Phenanthrene,-4.518,2,178.23399999999995,0,3,0,0.0,-5.26,c1ccc2c(c1)ccc3ccccc32
+1-Methylphenanthrene,-4.87,1,192.261,0,3,0,0.0,-5.85,Cc1cccc2c1ccc3ccccc32
+Diphenylamine,-3.857,2,169.227,1,2,2,12.03,-3.504,N(c1ccccc1)c2ccccc2
+RTI 9,-3.784,1,239.274,0,3,1,29.54,-3.68,O2c1ccccc1N(CC)C(=O)c3ccccc23 
+RTI 11,-3.125,1,254.289,1,3,0,55.56,-3.928,O2c1ccc(N)cc1N(C)C(=O)c3cc(C)ccc23 
+Benzo(a)pyrene,-6.0070000000000014,2,252.316,0,5,0,0.0,-8.699,c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45
+Minoxidil,-1.809,1,209.253,2,2,1,95.11,-1.989,Nc1cc(nc(N)n1=O)N2CCCCC2 
+Benzo(a)fluorene,-5.189,2,216.283,0,4,0,0.0,-6.68,C1c2ccccc2c3ccc4ccccc4c13
+Dioxacarb,-1.614,1,223.22799999999995,1,2,2,56.790000000000006,-1.57,CNC(=O)Oc1ccccc1C2OCCO2
+Propylcyclopentane,-3.16,1,112.216,0,1,2,0.0,-4.74,CCCC1CCCC1
+Cyclopentane ,-2.0380000000000003,2,70.135,0,1,0,0.0,-2.64,C1CCCC1
+Pentylcyclopentane,-3.869,1,140.26999999999998,0,1,4,0.0,-6.08,CCCCCC1CCCC1
+Methylcyclopentane,-2.452,1,84.162,0,1,0,0.0,-3.3,CC1CCCC1
+methylthiouracil,-0.547,1,142.18300000000005,2,1,0,48.65,-2.436,Cc1cc(=O)[nH]c(=S)[nH]1
+Propiconazole,-4.603,1,342.2260000000001,0,3,5,49.17,-3.4930000000000003,CCCC1COC(Cn2cncn2)(O1)c3ccc(Cl)cc3Cl
+Triphenylene,-5.568,2,228.294,0,4,0,0.0,-6.726,c1ccc2c(c1)c3ccccc3c4ccccc24
+fluconazole,-2.418,1,306.276,1,3,5,81.64999999999998,-1.8,OC(Cn1cncn1)(Cn2cncn2)c3ccc(F)cc3F 
+biquinoline,-4.9030000000000005,2,256.308,0,4,1,25.78,-5.4,c2ccc1nc(ccc1c2)c4ccc3ccccc3n4 
+Epitostanol,-4.545,1,306.5150000000001,1,5,0,20.23,-5.41,CC45CCC2C(CCC3CC1SC1CC23C)C4CCC5O
+Camphor,-2.158,1,152.237,0,2,0,17.07,-1.96,CC1(C)C2CCC1(C)C(=O)C2
+D-fenchone,-2.158,1,152.237,0,2,0,17.07,-1.85,CC2(C)C1CCC(C)(C1)C2=O
+Tricresyl phosphate,-6.39,1,368.36900000000014,0,3,6,44.76000000000001,-6.01,Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1
+RTI 24,-4.423,1,273.723,1,3,1,45.23,-5.36,CCN2c1cc(Cl)ccc1NC(=O)c3cccnc23 
+RTI 23,-4.228,1,283.33099999999996,1,3,2,54.46,-5.153,CCN2c1cc(OC)cc(C)c1NC(=O)c3cccnc23 
+RTI 5,-3.471,1,253.30499999999995,0,3,1,36.44,-3.324,CCN2c1ccccc1N(C)C(=O)c3cccnc23 
+RTI 22,-4.408,1,296.374,1,3,2,48.47,-4.871,CCN2c1cc(N(C)C)cc(C)c1NC(=O)c3cccnc23 
+Cyfluthrin,-6.84,1,434.29400000000015,0,3,6,59.32000000000001,-7.3370000000000015,CC1(C)C(C=C(Cl)Cl)C1C(=O)OC(C#N)c2ccc(F)c(Oc3ccccc3)c2
+Deltamethrin,-7.44,1,505.20600000000013,0,3,6,59.32000000000001,-8.402000000000001,CC1(C)C(C=C(Br)Br)C1C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2
+Cypermethrin,-6.775,1,416.30400000000014,0,3,6,59.32000000000001,-8.017000000000001,CC1(C)C(C=C(Cl)Cl)C1C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2
+Permethrin,-7.129,1,391.29400000000015,0,3,6,35.53,-6.291,CC1(C)C(C=C(Cl)Cl)C1C(=O)OCc2cccc(Oc3ccccc3)c2
+Cyhalothrin,-6.905,1,449.85600000000017,0,3,6,59.32000000000001,-8.176,CC1(C)C(C=C(Cl)C(F)(F)F)C1C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2
+Fenpropathrin,-6.15,1,349.43000000000006,0,3,5,59.32000000000001,-6.025,CC1(C)C(C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2)C1(C)C
+phenothrin,-6.763,1,350.45800000000014,0,3,6,35.53,-5.24,CC(C)=CC3C(C(=O)OCc2cccc(Oc1ccccc1)c2)C3(C)C 
+hydroxychlordene,-4.1560000000000015,1,354.87499999999983,1,3,0,20.23,-5.46,OC1C=CC2C1C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl 
+Chlordene,-5.152,1,338.876,0,3,0,0.0,-5.64,ClC2=C(Cl)C3(Cl)C1C=CCC1C2(Cl)C3(Cl)Cl 
+Heptachlor,-5.26,1,373.32099999999986,0,3,0,0.0,-6.317,ClC1C=CC2C1C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl
+Pyridazine,-0.619,2,80.08999999999997,0,1,0,25.78,1.1,c1ccnnc1
+Azintamide,-2.231,1,259.762,0,1,5,46.09,-1.716,CCN(CC)C(=O)CSc1ccc(Cl)nn1
+Succinimide,0.282,1,99.089,1,1,0,46.17,0.3,O=C1CCC(=O)N1
+allantoin,0.652,1,158.11700000000002,4,1,1,113.32,-1.6,NC(=O)NC1NC(=O)NC1=O 
+hydantoin,0.603,1,100.07700000000001,2,1,0,58.2,-0.4,O=C1CNC(=O)N1 
+hematein,-1.795,1,300.26599999999996,4,4,0,107.22,-2.7,c1cc(O)c(O)c2OCC3(O)CC4=CC(=O)C(O)=CC4=C3c21
+Menthone,-2.516,1,154.253,0,1,1,17.07,-2.35,CC(C)C1CCC(C)CC1=O
+Cyclohexanone,-0.996,1,98.145,0,1,0,17.07,-0.6,O=C1CCCCC1
+Quinethazone,-2.184,1,289.74400000000014,3,2,2,101.29,-3.29,CCC2NC(=O)c1cc(c(Cl)cc1N2)S(N)(=O)=O
+"Atovaquone(0,430mg/ml) - neutral",-6.269,1,366.84400000000016,1,4,2,54.37,-5.931,OC4=C(C1CCC(CC1)c2ccc(Cl)cc2)C(=O)c3ccccc3C4=O
+piperonal,-2.033,1,150.13299999999995,0,2,1,35.53,-1.63,O=Cc2ccc1OCOc1c2 
+Carbanilide,-3.611,1,212.252,2,2,2,41.13,-3.15,O=C(Nc1ccccc1)Nc2ccccc2
+alloxan,0.436,1,142.07,2,1,0,92.34,-1.25,O=C1NC(=O)C(=O)C(=O)N1 
+"P,P'-DDE",-6.553,1,318.0300000000001,0,2,2,0.0,-6.9,ClC(Cl)=C(c1ccc(Cl)cc1)c2ccc(Cl)cc2
+Dapsone,-2.464,1,248.30700000000002,2,2,2,86.18,-3.094,Nc1ccc(cc1)S(=O)(=O)c2ccc(N)cc2
+Perfluidone,-4.945,1,379.381,1,2,4,80.31,-3.8,Cc1cc(ccc1NS(=O)(=O)C(F)(F)F)S(=O)(=O)c2ccccc2
+Mefenacet,-4.504,1,298.367,0,3,4,42.43000000000001,-4.873,CN(C(=O)COc1nc2ccccc2s1)c3ccccc3
+d-Limonene,-3.429,1,136.238,0,1,1,0.0,-4.26,CC1=CCC(CC1)C(C)=C
+Cyclohexene,-2.16,2,82.146,0,1,0,0.0,-2.59,C1CCC=CC1
+1-Methylcyclohexene ,-2.574,1,96.17300000000002,0,1,0,0.0,-3.27,CC1=CCCCC1
+"1,4-Cyclohexadiene",-1.842,2,80.12999999999998,0,1,0,0.0,-2.06,C1C=CCC=C1
+Cyclopentyl-5-spirobarbituric acid,-0.966,1,182.179,2,2,0,75.27,-2.349,O=C2NC(=O)C1(CCCC1)C(=O)N2
+Equilenin,-3.927,1,266.34,1,4,0,37.3,-5.24,CC34CCc1c(ccc2cc(O)ccc12)C3CCC4=O
+menthol,-2.782,1,156.269,1,1,1,20.23,-2.53,CC(C)C1CCC(C)CC1O 
+Cyclohexanol ,-1.261,1,100.161,1,1,0,20.23,-0.44,OC1CCCCC1
+cycloate,-3.35,1,215.36199999999997,0,1,3,20.31,-3.4,CCSC(=O)N(CC)C1CCCCC1 
+Lindane,-4.009,1,290.832,0,1,0,0.0,-4.64,ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl
+"trans-1,4-Dimethylcyclohexane",-3.305,1,112.21600000000001,0,1,0,0.0,-4.47,C/C1CCC(\C)CC1
+Cyclohexane,-2.477,2,84.162,0,1,0,0.0,-3.1,C1CCCCC1
+Methylcyclohexane ,-2.891,1,98.189,0,1,0,0.0,-3.85,CC1CCCCC1
+"cis-1,2-Dimethylcyclohexane",-3.305,1,112.21600000000001,0,1,0,0.0,-4.3,C/C1CCCCC1\C
+Ethylcyclohexane,-3.245,1,112.216,0,1,1,0.0,-4.25,CCC1CCCCC1
+d-inositol,-0.887,1,180.15599999999998,6,1,0,121.38,0.35,OC1C(O)C(O)C(O)C(O)C1O
+eucalyptol,-2.579,1,154.253,0,3,0,9.23,-1.64,CC12CCC(CC1)C(C)(C)O2 
+"1,8-Cineole",-2.579,1,154.253,0,3,0,9.23,-1.74,CC12CCC(CC1)C(C)(C)O2
+Methoxsalen,-3.25,1,216.19199999999995,0,3,1,52.58,-3.664,COc2c1occc1cc3ccc(=O)oc23 
+Tetrahydrofurane ,-0.62,2,72.107,0,1,0,9.23,0.49,C1CCOC1
+2-Methyltetrahydrofurane,-1.034,1,86.134,0,1,0,9.23,0.11,CC1CCCO1
+Fructose,0.471,1,180.15599999999998,5,1,2,110.38,0.64,OCC1OC(O)(CO)C(O)C1O
+Flutriafol,-3.569,1,301.296,1,3,4,50.94,-3.37,OC(Cn1cncn1)(c2ccc(F)cc2)c3ccccc3F
+Acenapthene,-3.792,2,154.21199999999996,0,3,0,0.0,-4.63,C1Cc2cccc3cccc1c23
+Dibenzothiophene,-4.597,2,184.263,0,3,0,0.0,-4.38,c1ccc2c(c1)sc3ccccc23
+"Etoposide (148-167,25mg/ml)",-3.292,1,588.5620000000001,3,7,5,160.83,-3.571,COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67
+Oxazepam,-3.517,1,286.718,2,3,1,61.69000000000001,-3.952,OC3N=C(c1ccccc1)c2cc(Cl)ccc2NC3=O 
+Nimetazepam,-3.557,1,295.29800000000006,0,3,2,75.81,-3.796,CN2C(=O)CN=C(c1ccccc1)c3cc(ccc23)N(=O)=O
+Nitrazepam,-3.4730000000000003,1,281.27099999999996,1,3,2,84.6,-3.796,O=C3CN=C(c1ccccc1)c2cc(ccc2N3)N(=O)=O
+Clonazepam,-3.707,1,315.716,1,3,2,84.6,-3.499,Clc1ccccc1C2=NCC(=O)Nc3ccc(cc23)N(=O)=O
+Diazepam,-4.05,1,284.7460000000001,0,3,1,32.67,-3.754,CN2C(=O)CN=C(c1ccccc1)c3cc(Cl)ccc23
+Lorazepam,-3.75,1,321.163,2,3,1,61.69000000000001,-3.604,OC3N=C(c1ccccc1Cl)c2cc(Cl)ccc2NC3=O
+Triazolam,-3.948,1,343.2170000000001,0,4,1,43.07,-4.09,Cc3nnc4CN=C(c1ccccc1Cl)c2cc(Cl)ccc2n34
+Dibenzofurane,-4.2010000000000005,2,168.195,0,3,0,13.14,-4.6,o1c2ccccc2c3ccccc13
+Carboxin,-2.927,1,235.308,1,2,2,38.33,-3.14,CC1=C(SCCO1)C(=O)Nc2ccccc2
+Fluridone,-4.249,1,329.321,0,3,2,22.0,-4.445,Cn2cc(c1ccccc1)c(=O)c(c2)c3cccc(c3)C(F)(F)F
+Siduron,-3.779,1,232.32700000000003,2,2,2,41.13,-4.11,CC1CCCCC1NC(=O)Nc2ccccc2
+Phenmedipham,-4.229,1,300.314,2,2,3,76.66,-4.805,COC(=O)Nc1cccc(OC(=O)Nc2cccc(C)c2)c1
+Desmedipham,-4.182,1,300.314,2,2,4,76.66,-4.632,CCOC(=O)Nc2cccc(OC(=O)Nc1ccccc1)c2 
+"1,2-Propylene oxide",-0.358,1,58.08,0,1,0,12.53,-0.59,CC1CO1
+borneol,-2.423,1,154.253,1,2,0,20.23,-2.32,CC1(C)C2CCC1(C)C(O)C2

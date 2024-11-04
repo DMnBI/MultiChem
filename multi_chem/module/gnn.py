@@ -60,6 +60,10 @@ class MultiChem(Module):
 		loss = loss.nan_to_num()
 		return loss
 
+	def loss_function_reg(self, output, target):
+		loss = F.mse_loss(output, target)
+		return loss
+
 	def forward(self, batch, lin_batch):
 		node_x = self.atom_init_layer(batch.x)
 		edge_x = self.bond_init_layer(lin_batch.x)

@@ -15,6 +15,9 @@ class load_file:
 		elif 'ID' in col_names and 'Unnamed: 0' in col_names:
 			data = data.drop(['ID', 'Unnamed: 0'], axis=1)
 			data = data.rename(columns={'SMILES':'smiles'})
+		elif 'mol' in col_names and 'Class' in col_names:
+			data = data.rename(columns={'mol':'smiles'})
+			data = data[['smiles', 'Class']]
 		else:
 			pass
 
@@ -79,3 +82,27 @@ class rebuild:
 			val = val.reset_index(drop=True)
 
 		return train, val
+
+class load_file_reg:
+	def csv_to_df(self, file_path):
+		data = pandas.read_csv(file_path, index_col=False)
+
+		col_names = data.columns
+
+		if 'expt' in col_names:
+			data = data[['smiles', 'expt']]
+		elif 'measured log solubility in mols per litre' in col_names:
+			data = data[['smiles', 'measured log solubility in mols per litre']]
+		elif 'exp' in col_names:
+			data = data[['smiles', 'exp']]
+		else:
+			pass
+
+		return data
+
+	def df_to_data(self, data):
+		if len(data.columns) > 1:
+			data = {'inputs':data['smiles'].to_numpy(), 'labels':data.loc[:, ~data.columns.isin(['smiles'])].to_numpy()}
+		else:
+			data = {'inputs':data['smiles'].to_numpy(), 'labels':None}
+		return data

@@ -28,6 +28,8 @@ if __name__ == '__main__':
 	parser.add_argument('--learning', action='store_true')
 	parser.add_argument('--predict', action='store_true')
 
+	parser.add_argument('--task_type', default=0, choices=[0, 1], type=int, help='0 is classification, 1 is regression')
+
 	args = parser.parse_args()
 
 	import os
@@ -38,6 +40,13 @@ if __name__ == '__main__':
 	args_dict = vars(args)
 
 	from multi_chem.learning.learner import learn_MultiChem
+	from multi_chem.learning.learner import learn_MultiChem_reg
 
-	learner = learn_MultiChem(**args_dict)
-	learner.run()
+	if args_dict['task_type'] == 0:
+		learner = learn_MultiChem(**args_dict)
+		learner.run()
+	elif args_dict['task_type'] == 1:
+		learner = learn_MultiChem_reg(**args_dict)
+		learner.run()
+	else:
+		None
