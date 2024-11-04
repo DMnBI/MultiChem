@@ -1,20 +1,17 @@
 <!-- #region -->
 # MultiChem: predicting chemical properties using multi-view graph attention network
--- -- --
 
 ## Environment
-- - -
 - Conda 24.7.1 
 - CUDA 11.3
 
 ## Requirements
-- - -
 ```bash
 conda env create --file requirements.yaml 
 ```
 
 ## Example
-- - -
+
 **Create 30 seeds**
 ```python
 python ./example_data/thirty_data/make_dataset.py tox21
